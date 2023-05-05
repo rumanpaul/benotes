@@ -1,143 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
 *
 {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans',sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-serif;
 
 }
 
-body{
-    height: 100vh;
-    background-color: black;
-    background-image: url('C:/Users/shilp/Downloads/main-qimg-ae11bdfc5d55299440ce0201eaced82e.jpg');
-    background-size: cover;
-    background-position: center;
-
-}
-
-li
+body
 {
-    list-style: none;
-
-}
-
-a{
-    text-decoration: none;
-    color: aliceblue;
-    font-size: 1rem;
-
-}
-
-a:hover
-{
-    color:blueviolet;   
+	min-height: 100vh;
+	background: linear-gradient(#2b1055,#7597de);
 }
 
 header
 {
-    position: relative;
-    padding: 0 2rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items:center ;
+	z-index: 1000;
 }
 
-.navbar
+header .logo
 {
-    width: 100%;
-    height: 60px;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+	color: white;
+	font-weight:700 ;
+	text-decoration: none;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+
 }
 
-.navbar .logo a
+header ul
 {
-    font-size: 1.5rem;
-    font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 
 }
 
-.navbar .links
+header ul li
 {
-    display: flex;
-    gap: 2rem;
+	list-style: none;
+	margin-left: 20px;
 }
 
-.navbar .toggle_btn
+header ul li a
 {
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
+	text-decoration: none;
+	padding: 6px 15px;
+	color: white;
+	border-radius: 20px;
 }
 
-.action_btn
+header ul li a:hover,
+header ul li a.active
 {
-    background-color: orange;
-    color: white;
-    padding: 0.5rem 1rem;
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    cursor: pointer;
-
+	background: white;
+	color: #2b1055;
 }
 
-.action_btn:hover
+section
 {
-    scale: 0.95;
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	padding: 100px;
 }
 
-.dropdown_menu
+section img
 {
-    display: none;
-    position: absolute;
-    right: 2rem;
-    top: 60px;
-    width: 300px;
-    background: rgba(255, 255, 255, 0.1) ;
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
-    overflow: hidden;
-    height: 0;
-    transition: height 0.2s cubic-bezier(0.175,0.885,0.32,1.275);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
-.dropdown_menu.open 
+section img#moon
 {
-    height: 240px;
+	mix-blend-mode: screen;
 }
 
-.dropdown_menu li
-{
-    padding: 0.7rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.dropdown_menu .action_btn
-{
-    width: 100%;
-    display: flex;
-    justify-content: center;
 
-}
 
-@media(max-width: 992px)
-{
-    .navbar .links,
-    .navbar .action_btn{
-        display: none;
-    }
-    .navbar .toggle_btn
-    {
-        display: block;
-    }
-    .dropdown_menu
-    {
-        display: block;
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
